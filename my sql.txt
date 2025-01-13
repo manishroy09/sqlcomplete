@@ -1,0 +1,12 @@
+// my sql
+-first to use that database
+use jan13;
+
+then make make table- 
+
+create table student(
+sid int primary key,
+name varchar(45),
+enroll varchar(45),
+per float
+);
