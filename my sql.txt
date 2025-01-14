@@ -10,3 +10,20 @@ name varchar(45),
 enroll varchar(45),
 per float
 );
+
+// Q1how to display structure of table
+---- desc /(describe) tablename;
+
+Q2. To add new column in existing table
+    (insert new column )
+  ---- Alter table tableName add column columnName datatype;
+eg.. Alter table student add column p int;
+
+Q3. to delete particular column from the student table
+  --- alter table tableName drop column columnName;
+
+eg.. alter table student drop column grade;
+
+Q4. How to create new table with existing table in MySQL
+ -- create table tableName as select * from table2;
+   eg. create table student1 as select* from student;

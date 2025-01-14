@@ -1,0 +1,34 @@
+// DML -- DATA MANIPULATION LANGUAGE
+
+
+Q1. insert record into the table in MySQL;
+ -- two ways to insert data into MySQL table
+ i. insert data into all columns 
+  --- insert into tablename values(value1, value2,...)
+
+ eg. insert into student values
+(101, 'Akash', '0111CS221119',95.89,73,98,97,95,93,495) 
+
+ ii. insert data into specific columns 
+  -- inset into tableName(column1,column2,..) values(value1, value2...);
+  eg. insert into student(sid, name, enroll) values(102,'Manish' , '0111CS221121');
+
+Q2. how to display data of table in mysql?
+ ---Two ways to select da
+   i. display 
+  --- select * from tabelName;
+   ii. 
+ 
+Q3. to update 
+ -- update table tableName set columnName=value,...,
+where pk=?;
+
+eg. update student set name='Kartik', enroll='0111CS221128'where sid=103;
+
+Q4. to delete data from the sql table;
+  --- delete from tableName where pk=?;
+eg. delete from student where sid=103;
+
+
+
+
