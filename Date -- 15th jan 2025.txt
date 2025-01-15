@@ -1,0 +1,36 @@
+// Date -- 15th jan 2025
+
+
+
+Q1. to create emp table 
+   empno name sal job gender hireddate comm dptno
+
+- create table emp;
+
+- create table emp(
+  empno int primary key,
+  name varchar(45),
+  sal float,
+  job varchar(45),
+  gender char(2),
+  hireddate date,
+  comm int,
+  deptno int
+ );
+
+-insert into emp
+values(1,'Manish',56886.76,'MANAGER','M','2022-01-15',2,10),
+values(2,'Mohit',56853.76,'CLARK','M','2022-01-16',3,20),
+values(3,'Aman',54387.76,'MANAGER','M','2022-01-15',4,10),
+values(4,'Sachin',45847.76,'Salesman','M','2023-03-05',6,20),
+values(5,'Manish singh',50000.76,'CLARK','M','2023-03-12',7,20),
+values(6,'Satyam',50670.76,'salesman','M','2023-03-15',8,30),
+values(7,'Gaurav',50550.76,'CLARK','M','2023-04-12',9,10),
+values(8,'Neha',67466.76,'Manager','f','2022-04-12',9,20),
+values(9,'Gauri',50400.76,'CLARK','f','2023-03-11',10,30),
+values(11,'Ishani',40000.76,'Salseman','F','2023-03-12',12,10),
+values(12,'khusi',56700.76,'CARK','F','2022-03-12',7,20),
+values(13,'Swati',50000.76,'CLARK','F','2023-03-12',7,20),
+values(14,'Anjali',546000.76,'Manager','F','2023-03-12',7,30),
+values(15,'Tanu',50000.76,'CLARK','F','2023-03-12',7,20);
+
