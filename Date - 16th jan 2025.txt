@@ -1,0 +1,90 @@
+Date - 16th jan 2025
+// if alse 
+Q1. print selectet coloumn only
+-- select name,sal, job from emp;
+
+2.crate new table according to 
+
+-- create table emp11 as select * from emp;
+
+Q2 . to print data of all element whose depno 
+
+-- select * from emp where deptno=10;
+
+Q3. to print data of all employ whose sal is 1500
+ 
+ -- select * from emp where sal>15000;
+
+Q4. to print data of all employ whose job is clark
+
+-- select * from emp where job='CLARK';
+
+Q5.wsq to print to calculate annual salary of employee
+
+-- select sal , sal*12 from emp;
+Q6. to use the name update name of column
+--- select sal as monthly_salary ,sal*12 as Annual_salary from emp;
+
+Q7. wsq to print data of all male candidate
+  or female
+-- select * from emp where gender='M';
+
+// aggregate function;
+-- af in sql prform operation on set  of values and return one values 
+
+-- following aggregate function 
+
+1. sum()
+--- select sum(sal) from emp;
+
+Q1. sum sal of all  depno=10;
+
+--- select sum(sal) from emp where deptno=10;
+
+-- select sum(sal) from emp where job='clark';
+
+--- select sum(sal) from emp where gender='m';
+
+
+
+
+2. Avg()
+--- select avg(sal) from emp;
+
+3. Max() -- 
+--- select max(sal) from emp;
+
+4. Min()
+--- select min(sal) from emp;
+
+   select min(sal) from emp where deptno=10;
+
+select min(sal) from emp where job='clark';
+
+ select min(sal) from emp where gender='m';
+
+
+5. count()-- it will return no of rows or no of column 
+--- select count(*) from emp; 
+
+Q. explain orderby clause in sql 
+--- to sort the data in order 
+
+6. orderby()
+
+--- select column list from tablename order by column name;( ascending order)
+
+
+or 
+
+select column list from tablename order by column name ASC|DESC;
+
+--- select * from emp order by sal;
+--- select * from emp order by sal desc;
+
+Q.wsq to print data of all employee on the basis of name in asc or desc order;
+--- select * from emp order by name asc;
+
+--- select * from emp order by name,sal;
+
+
