@@ -1,0 +1,53 @@
+Date 18th jan 2025
+
+
+1. having clause 
+
+--- 
+a. select deptno, count(*) from emp group by deptno having count(deptno)>4;
+
+or 
+
+select deptno, count(deptno) from emp group by deptno having count(deptno)>=5;
+
+b. select job,count(job) from emp group by job having count(job)<3; 
+
+c. select deptno, sum(sal) from emp group by deptno having sum(sal)>200000;
+
+d. to count no of male candidate in each dipartament
+
+- select job ,count(*) from emp group by job having gender='m';
+
+-- select job ,count(*) from emp where gender='m' group by job;
+
+
+create table dept(
+deptno int primary key,
+dname varchar(45),
+loc varchar(45)
+);
+
+
+
+insert into dept values(10,'cs','BHOPAL');
+
+insert into dept values(20,'finance','INDORE');
+
+insert into dept values(30,'Agriculture','JABALPUR');
+
+insert into dept values(40,'Pharma','UJJAIN');
+
+
+
+1. Inner join
+
+--- select * from emp
+    inner join dept
+    on emp.deptno = dept.deptno;
+ 
+
+
+ 
+
+
+
