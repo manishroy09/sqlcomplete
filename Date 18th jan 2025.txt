@@ -37,17 +37,42 @@ insert into dept values(30,'Agriculture','JABALPUR');
 
 insert into dept values(40,'Pharma','UJJAIN');
 
+1. cross join 
 
 
-1. Inner join
+2. Inner join
 
 --- select * from emp
     inner join dept
     on emp.deptno = dept.deptno;
  
+3. left join or left outer join 
+
+--- select * from emp
+   left join dept
+   on emp.deptno = dept.deptno;
+
+  ---- select empno,sel,job,emp.deptno, dname,loc emp left join dept on emp.deptno = dept.deptno;
 
 
- 
+4. right join or right outer join 
 
+--- select * from emp
+   right join dept
+   on emp.deptno = dept.deptno;
 
+//sub query 
+Q1. 
+--- 
 
+ --- select * from emp where sal>(select avg(sal) from emp);
+ // 
+Q2. sal is largest 
+ select * from emp having sal=(select max(sal) from emp);
+
+Q3. sal is lowest 
+select * from emp having sal=(select min(sal) from emp);
+
+Q4.find employee who belongs to dep located in the indor
+
+--- select name, deptno from emp where deptno in(select deptno from dept where loc='indore');
