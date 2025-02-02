@@ -1,0 +1,23 @@
+// jdbc task 
+
+create table emp(
+empno int primary key,
+ename varchar(45),
+job varchar(45),
+mgr int,
+hiredate date,
+sal float,
+comm float,
+deptno int
+);
+
+insert into emp values(800,null,null,null,NULL,NULL,NULL,NULL);
+
+create table users(
+uid int primary key,
+name varchar(45),
+username varchar(45),
+password varchar(45),
+email varchar(45),
+mobile varchar(45)
+);
