@@ -1,0 +1,12 @@
+create table student(
+Sid int primary key,
+Name varchar(45),
+Enroll varchar(45),
+P int,
+C int,
+M int,
+H int,
+E int,
+Total int,
+Per float
+);
